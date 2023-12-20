@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>AI poem generator</title>
   </head>
@@ -12,19 +13,13 @@
         <h1>AI poem generator</h1>
       </header>
       <main>
-        <form>
+        <form id="input">
           <input class="instructions" type="text" placeholder="Enter your topic" required autocomplete="off">
           <input class="submit-button" type="submit" value="submit">
         </form>
         
-        <div class="poem">
-          In shadows soft, where moonlight gleams,
-          <br>
-          Whiskered whispers, in midnight dreams.
-          <br>
-          Graceful prowlers, velvet paws,
-          <br>
-          Cats dance silently, nature's applause.
+        <div class="poem" id="output">
+          
         </div>
       </main>
       <footer>
