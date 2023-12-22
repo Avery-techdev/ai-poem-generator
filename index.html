@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI poem generator</title>
   </head>
   <body>
@@ -13,33 +13,42 @@
       <header>
         <h1>AI poem generator</h1>
       </header>
+
       <main>
-        <form id="input">
-          <input class="instructions" type="text" placeholder="Enter your topic" required autocomplete="off" id="user-instructions">
-          <input class="submit-button" type="submit" value="submit">
-        </form>
-        
-        <div class="poem" id="output">
-          
+        <div class="form-container">
+          <form id="input">
+            <input
+              class="instructions"
+              type="text"
+              placeholder="Enter your topic"
+              required
+              autocomplete="off"
+              id="user-instructions" />
+            <input class="submit-button" type="submit" value="submit" />
+          </form>
+          <div class="hint">i.e: Cats, Trees, Music</div>
         </div>
+
+        <div class="poem hidden" id="output"></div>
       </main>
+
       <footer>
-          This AI project was coded by
-          <a href="https://github.com/Avery-techdev" target="_blank">Avery Hauschild</a> and
-          is
-          <a
-            href="https://github.com/Avery-techdev/ai-poem-generator"
-            target="_blank"
-          >
-            open-sourced on GitHub</a
-          >
-          and is
-          <a href="https://averys-ai-poem-generator.netlify.app/" target="_blank"
-            >hosted on Netlify</a
-          >.
+        This AI project was coded by
+        <a href="https://github.com/Avery-techdev" target="_blank"
+          >Avery Hauschild</a
+        >
+        and is
+        <a
+          href="https://github.com/Avery-techdev/ai-poem-generator"
+          target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://averys-ai-poem-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
       </footer>
     </div>
-      <script src="src/index.js"></script>
-      
+    <script src="src/index.js"></script>
   </body>
 </html>
